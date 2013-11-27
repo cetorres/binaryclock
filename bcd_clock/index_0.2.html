@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>Javascript Binary-coded Decimal Clock</title>
+  <meta name="Author" content="Carlos Eugenio Torres (carloseugeniotorres@gmail.com)">
+  <meta name="Keywords" content="binary coded decimal clock javascript">
+  <script language="javascript" src="bcdclock_0.2.js"></script>
+ </head>
+ <body>
+ <h3 style="text-align: center; font-family: tahoma, verdana, arial;">Javascript Binary-coded Decimal Clock</h3>
+ <div id="clock_container" style="text-align: center;"></div>
+ <div id="clock_digits" style="text-align: center; font-family: Tahoma"></div>
+ <br/>
+ <div id="copyright" style="text-align: center; font-size: 10px; font-family: tahoma, verdana, arial;">&copy; 2007 <a href="mailto:carloseugeniotorres@gmail.com" style="color: #000000">Carlos Eug&ecirc;nio Torres</a></div>
+ <script language="javascript">
+	var bcdClock = null;
+	function init()
+	{
+		bcdClock = new BCDClock("clock_container", "clock_digits");
+		bcdClock.load();
+		updateClockExternal();
+	}
+	window.onload = init;
+ </script>
+ </body>
+</html>
